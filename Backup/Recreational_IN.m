@@ -4,6 +4,8 @@
 %using haversine functions for rough estimate
 %d = 2*r*arcsin(sqrt('inside' for simplicity))
 disp('Enter your starting coordinates below \n');
+disp('Latitude should be between -180 and 180 degrees \n');
+disp('Longitude should be between -90 and 90 degrees');
 phi_1 = input('Enter latitudinal coordinate: \n');
 lam_1 = input('Enter longitudinal coordinate: \n');
 
@@ -40,5 +42,5 @@ lam_mid = lam_1 + atan2(B_y,x_lam);
 %output = output/1000 for km
 %output = output/1609.34 for miles
 fprintf('The estimated length of your route is %g km \n', d/1000);
-fprintf('The midpoint of your route should be at '); disp(phi_mid,lam_mid); %??
+fprintf('The midpoint of your route should be at ( %g , %g )', phi_mid, lam_mid);
 %not sure if output is right, this is placeholder
