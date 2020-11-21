@@ -19,10 +19,10 @@ phi_2 = phi_2*(pi/180);
 lam_1 = lam_1*(pi/180);
 lam_2 = lam_2*(pi/180);
 
-r = 6.37E6 %meters or 6371 km (earth's radius)
-inside1 = sin^2((phi_2-phi_1)/2);
+r = 6.37E6; %meters or 6371 km (earth's radius)
+inside1 = sin((phi_2-phi_1)/2)*sin((phi_2-phi_1)/2);
 inside2 = cos(phi_1)*cos(phi_2);
-inside3 = sin^2((lam_2-lam_1)/2);
+inside3 = sin((lam_2-lam_1)/2)*sin((lam_2-lam_1)/2);
 
 %somehow have to factor in land masses at this point
 d = 2*r*arcsin(sqrt(inside1+inside2*inside3));
