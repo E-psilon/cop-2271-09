@@ -1,8 +1,5 @@
 clc;clear;
 
-
-
-
 %Inputs for coordinates
 initial=input('Please input your starting Latitude(-90,90) and Logitude(-180,180) in []: ');
 
@@ -12,7 +9,7 @@ else
     final=input('Please input your final Latitude(-90,90) and Logitude(-180,180) in []: ');
     if final(1) < -90 || final(1)>90 ||final(2) < -180 || final(2)>180
     fprintf('{Please enter coordinates within the domain')
-    D=error
+    %D=error
     else 
         fuelburn=input('Please enter fuel burn in gallons/hour: ');
 cruising=input('Please enter cruising speeed in Knots: ');
@@ -36,7 +33,7 @@ C=2*atan(sqrt(A)/sqrt(1-A));
 
 D=R*C/1.852 %distance in knotts
 
-Midpoint=
+%Midpoint=
 
 
 % Duration /Predicted Fuel calc
