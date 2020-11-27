@@ -1,5 +1,4 @@
 %Recreational User Input
-%this is a test 8:04PM 11/26
 
 %asking for longitudinal and latitudinal coordinates (radians?)
 %using haversine functions for rough estimate
