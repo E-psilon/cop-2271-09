@@ -10,7 +10,7 @@ disp('Longitude should be between -90 and 90 degrees');
 fprintf('\n');
 phi_1 = input('Enter latitudinal coordinate: ');
 lam_1 = input('Enter longitudinal coordinate: ');
-disp('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`~~~~~~~');
+disp('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
 disp('Enter your destination coordinates below');
 phi_2 = input('Enter latitudinal coordinate: ');
 lam_2 = input('Enter longitudinal coordinate: ');
