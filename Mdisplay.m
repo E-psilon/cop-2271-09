@@ -23,3 +23,12 @@ g1 = geoglobe(tab1);
 tab2 = uitab(tgroup,'Title','Gray Terrain Basemap');
 g2 = geoglobe(tab2,'Basemap','grayterrain');
 %3D map display testing
+
+latS = app.LatStartEditField.Value;
+            latE = app.LatEndEditField.Value;
+            lonS = app.LonStartEditField.Value;
+            lonE = app.LonEndEditField.Value;
+            
+            gx = geoaxes;
+            geoplot(gx,[latS latE],[lonS lonE],'g-*')
+            %geobasemap(gx,'colorterrain');
