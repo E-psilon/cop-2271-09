@@ -1,3 +1,4 @@
+
 %Beta Commercial User inputs
 initial=input('Please input your starting Latitude(-90,90) and Logitude(-180,180) in []: ');
 
@@ -56,6 +57,4 @@ duration=D/cruising ;%in hours
 
 Predictedfuel= duration*fuelburn %Gallons
 
-fprintf('Distance %g Fuel needed %g',D,Predictedfuel);
 end
-
