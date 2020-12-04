@@ -1,7 +1,8 @@
 %starting latitude is phi_1 and starting longitude is lam_1
 %ending latitude is phi_2 and ending longitude is lam_2
-%d is length of
-function[d, phi_mid, lam_mid] = RecFunctions(phi_1, phi_2, lam_1, lam_2)
+%d is length of path
+
+function[d, phi_mid, lam_mid] = RecFunction(phi_1, phi_2, lam_1, lam_2)
 phi_1 = phi_1*(pi/180);
 phi_2 = phi_2*(pi/180);
 lam_1 = lam_1*(pi/180);
