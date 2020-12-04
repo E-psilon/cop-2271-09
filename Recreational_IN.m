@@ -1,6 +1,5 @@
 %Recreational User Input
 clc; clear;
-
 %asking for longitudinal and latitudinal coordinates (radians?)
 %using haversine functions for rough estimate
 %d = 2*r*arcsin(sqrt('inside' for simplicity))
@@ -43,7 +42,6 @@ lam_mid = lam_1 + atan2(B_y,x_lam);
 
 %output = output/1000 for km
 %output = output/1609.34 for miles
-disp('**************************************************************');
 fprintf('The estimated length of your route is %g km \n', d/1000);
 fprintf('The midpoint of your route should be at ( %g , %g )', phi_mid, lam_mid);
 %not sure if output is right, this is placeholder
