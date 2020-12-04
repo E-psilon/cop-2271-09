@@ -1,13 +1,6 @@
-disp('Enter your starting coordinates below');
-disp('Latitude should be between -180 and 180 degrees');
-disp('Longitude should be between -90 and 90 degrees');
-fprintf('\n');
-phi_1 = input('Enter latitudinal coordinate: ');
-lam_1 = input('Enter longitudinal coordinate: ');
-disp('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
-disp('Enter your destination coordinates below');
-phi_2 = input('Enter latitudinal coordinate: ');
-lam_2 = input('Enter longitudinal coordinate: ');
+%starting latitude is phi_1 and starting longitude is lam_1
+%ending latitude is phi_2 and ending longitude is lam_2
+%d is length of path
 
 function[d, phi_mid, lam_mid] = RecFunctions(phi_1, phi_2, lam_1, lam_2)
 phi_1 = phi_1*(pi/180);
