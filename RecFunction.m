@@ -15,6 +15,7 @@ inside3 = sin((lam_2-lam_1)/2)*sin((lam_2-lam_1)/2);
 
 d = 2*r*asin(sqrt(inside1+inside2*inside3));
 d = d/1000;
+d = d/1.852;
 
 %find midpoint
 B_x = cos(phi_2)*cos(lam_2-lam_1);
