@@ -23,3 +23,4 @@ tab2 = uitab(tgroup,'Title','Gray Terrain Basemap');
 g2 = geoglobe(tab2,'Basemap','grayterrain');
 %3D map display testing
 
+
